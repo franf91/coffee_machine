@@ -59,6 +59,7 @@ def report(money):
 
 # function to process coins
 def coins():
+    """Handles insertion of coins"""
     print("Please insert coins")
     two_dollar = int(input("How many two dollar coins: "))
     one_dollar = int(input("How many one dollar coins: "))
@@ -74,6 +75,7 @@ def coins():
 
 
 def verify(drink):
+    """Verify resources and coins before serving drink"""
     global machine_money
     resources_water = resources['water']
     resources_milk = resources['milk']
@@ -110,7 +112,6 @@ def verify(drink):
 
 
 # Turn off the Coffee Machine by entering “off” to the prompt.
-
 
 while machine_on:
     user_input = input("What would you like? (espresso/latte/cappuccino): ")
